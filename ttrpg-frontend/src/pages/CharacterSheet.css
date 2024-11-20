@@ -1,0 +1,58 @@
+.character-sheet {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.three-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+
+}
+
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abilities-layout,
+.skills-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.abilities-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skill-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}

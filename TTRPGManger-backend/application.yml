@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres-db:5432/ttrpg_db
+    username: GMMoons
+    password: MadMoons!
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  mongodb:
+    uri: mongodb://mongo-db:27017/ttrpg_db
+
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO

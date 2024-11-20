@@ -1,0 +1,126 @@
+/* Root styles for color scheme management */
+:root {
+    --primary-bg-light: #f5f5f5;
+    --primary-bg-dark: #1e1e1e;
+    --primary-text-light: #333;
+    --primary-text-dark: #f5f5f5;
+    --primary-accent: #007acc;
+    --primary-accent-hover: #005f99;
+    --neutral-border: #ccc;
+    --neutral-border-hover: #bbb;
+    --message-color: #888;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+}
+
+/* Base styles for the page container */
+.home-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s ease-in-out;
+}
+
+/* Light theme styles */
+.home-container.light {
+    background-color: var(--primary-bg-light);
+    color: var(--primary-text-light);
+}
+
+/* Dark theme styles */
+.home-container.dark {
+    background-color: var(--primary-bg-dark);
+    color: var(--primary-text-dark);
+}
+
+/* Styling for the welcome and guest messages */
+.welcome-message,
+.guest-message {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-message p,
+.guest-message p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Campaign overview section */
+.campaign-overview {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid var(--neutral-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the campaign details section */
+.campaign-details {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* No campaign data message */
+.no-data {
+    color: var(--message-color);
+    font-style: italic;
+}
+
+/* Navigation links styling */
+.navigation-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+/* Styling for the link buttons (navigation) */
+.link-button {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+/* Hover effect for the link buttons */
+.link-button:hover {
+    background-color: var(--primary-accent-hover);
+    transform: scale(1.05);
+}
+
+/* Active state for buttons (when clicked) */
+.link-button:active {
+    transform: scale(1);
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .navigation-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .link-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Accessibility improvements */
+a:focus,
+.link-button:focus {
+    outline: 3px solid var(--primary-accent);
+    outline-offset: 2px;
+}
