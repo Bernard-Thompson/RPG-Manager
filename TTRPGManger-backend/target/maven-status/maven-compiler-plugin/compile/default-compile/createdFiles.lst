@@ -1,1 +1,8 @@
+com\management\ttrpg\dto\CampaignDTO.class
+com\management\ttrpg\repository\CampaignRepository.class
+com\management\ttrpg\controller\CampaignController.class
+com\management\ttrpg\model\entity\ProgressionType.class
+com\management\ttrpg\util\FileHandler.class
 com\management\ttrpg\TtrpgMangerBackendApplication.class
+com\management\ttrpg\service\CampaignService.class
+com\management\ttrpg\model\Campaign.class
